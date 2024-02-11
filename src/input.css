@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav.lg-nav ul li a {
+    @apply block px-4 py-3 text-gray-800 uppercase border-l hover:bg-gray-800 hover:text-white;
+}
+.mobile_nav ul li a {
+    @apply capitalize block py-4 border-b border-gray-300 text-gray-500 transition hover:text-blue-400;
+}
+.mobile_nav ul li a.active {
+    @apply text-blue-400;
+}
+
+.on {
+    @apply left-0;
+}
+.home-slide .slick-dots {
+    bottom: 5px;
+}
+.home-slide .slick-dots li button:before {
+    content: "";
+    @apply w-2.5 h-2.5 rounded-full bg-white;
+    
+}
+.home-slide .slick-dots li.slick-active button:before {
+    @apply bg-gray-50;
+}
+ /* the slides */
+ .prod-caro .slick-slide {
+    margin: 0 5px;
+}
+.prod-caro .slick-next {
+    right: -10px;
+    z-index: 2;
+}
+.prod-caro .slick-prev {
+    left: -10px;
+    z-index: 2;
+}
+/* the parent */
+.prod-caro .slick-list {
+    margin: 0 -5px;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    @apply text-orange-500
+}
+.btn {
+    @apply border border-gray-800 py-2 px-6 mt-4 text-sm hover:bg-gray-800 hover:text-white;
+}
+.controls li {
+    @apply text-gray-400 cursor-pointer active:cursor-default px-4 py-1
+}
+.controls li.active {
+    @apply text-white bg-gray-800
+}
